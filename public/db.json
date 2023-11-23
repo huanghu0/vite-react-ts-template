@@ -1,0 +1,142 @@
+{
+  "getRouters":{
+    "data":[
+      {
+        "name": "Home",
+        "path": "/home",
+        "hidden": false,
+        "redirect": "noRedirect",
+        "component": "Layout",
+        "alwaysShow": true,
+        "meta": {
+          "title": "首页",
+          "icon": "Home",
+          "noCache": false,
+          "link": null
+        },
+        "children": [
+          {
+            "name": "User",
+            "path": "user",
+            "hidden": false,
+            "redirect": "noRedirect",
+            "component": "ParentView",
+            "alwaysShow": true,
+            "meta": {
+              "title": "用户管理",
+              "icon": "User",
+              "noCache": false,
+              "link": null
+            },
+            "children": [
+              {
+                "name": "UserList",
+                "path": "userList",
+                "hidden": false,
+                "component": "home/user/list",
+                "meta": {
+                  "title": "用户列表",
+                  "icon": "List",
+                  "noCache": false,
+                  "link": null
+                }
+              },
+              {
+                "name": "UserManage",
+                "path": "userManage",
+                "hidden": false,
+                "component": "home/user/manage",
+                "meta": {
+                  "title": "用户管理",
+                  "icon": "User",
+                  "noCache": false,
+                  "link": null
+                }
+              }
+            ]
+          },
+          {
+            "name": "Set",
+            "path": "set",
+            "hidden": false,
+            "redirect": "noRedirect",
+            "component": "ParentView",
+            "alwaysShow": true,
+            "meta": {
+              "title": "信息设置",
+              "icon": "Set",
+              "noCache": false,
+              "link": null
+            },
+            "children": [
+              {
+                "name": "Company",
+                "path": "company",
+                "hidden": false,
+                "component": "home/set/company",
+                "meta": {
+                  "title": "公司信息设置",
+                  "icon": "Set",
+                  "noCache": false,
+                  "link": null
+                }
+              },
+              {
+                "name": "Education",
+                "path": "education",
+                "hidden": false,
+                "component": "home/set/education",
+                "meta": {
+                  "title": "教育信息设置",
+                  "icon": "Set",
+                  "noCache": false,
+                  "link": null
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Mine",
+        "path": "/mine",
+        "hidden": false,
+        "redirect": "noRedirect",
+        "component": "Layout",
+        "alwaysShow": true,
+        "meta": {
+          "title": "我的信息",
+          "icon": "Mine",
+          "noCache": false,
+          "link": null
+        },
+        "children": [
+          {
+            "name": "Index",
+            "path": "index",
+            "hidden": false,
+            "component": "mine/index",
+            "meta": {
+              "title": "我的主页",
+              "icon": "Home",
+              "noCache": false,
+              "link": null
+            }
+          },
+          {
+            "name": "Detail",
+            "path": "detail",
+            "hidden": true,
+            "component": "mine/detail",
+            "meta": {
+              "title": "详细信息",
+              "icon": "Detail",
+              "noCache": false,
+              "link": null
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
