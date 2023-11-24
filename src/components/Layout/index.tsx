@@ -8,7 +8,7 @@ export default memo(() => {
   return (
     <div className="app-layout">
       <SideBar></SideBar>
-      <div>
+      <div className="main-container">
         <NavBar></NavBar>
         <AppMain></AppMain>
       </div>
