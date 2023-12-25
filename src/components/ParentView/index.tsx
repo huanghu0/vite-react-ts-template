@@ -1,7 +1,7 @@
-import React,{  memo } from "react";
+import React from "react";
 import { Outlet } from 'react-router-dom';
 
-export default memo(() => {
+export default React.memo(() => {
   return (
   <>
     <Outlet></Outlet>

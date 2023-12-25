@@ -1,9 +1,9 @@
-import React,{  memo } from "react";
+import React from "react";
 
-export default memo(() => {
+export default React.memo(() => {
   return (
-    <div>
-      手机端首页
+    <div className="home">
+      首页
     </div>
   )
 }) 

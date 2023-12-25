@@ -1,3 +1,4 @@
+import React from "react"
 export interface RouterProps {
   name: string,
   path: string,
@@ -27,4 +28,10 @@ export interface MenuItem {
   key: string,
   icon?: React.ReactNode,
   children?: MenuItem[], 
+}
+
+export interface BottomTabBar {
+  key:string,
+  title:string,
+  icon:React.ReactNode
 }

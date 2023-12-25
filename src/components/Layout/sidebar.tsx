@@ -1,11 +1,11 @@
-import React,{  memo, useCallback, useEffect, useMemo, useState } from "react";
+import React,{ useCallback, useEffect, useMemo, useState } from "react";
 import { useAppSelector } from '@/hooks/storehooks';
 import { useNavigate,useLocation } from "react-router-dom";
 import type { MenuProps } from 'antd';
 import { RouterProps } from "@/interface/index";
 import { Menu } from 'antd';
 import { rewriteSideMenuItems } from "@/utils/index";
-export default memo(() => {
+export default React.memo(() => {
   const { routeList } = useAppSelector((state) => state.routerStore)
   const navigate = useNavigate()
   const location = useLocation();

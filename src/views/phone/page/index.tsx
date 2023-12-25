@@ -1,8 +1,8 @@
-import React,{  memo } from "react";
+import React from "react";
 
-export default memo(() => {
+export default React.memo(() => {
   return (
-    <div>
+    <div className="page">
       手机page页
     </div>
   )

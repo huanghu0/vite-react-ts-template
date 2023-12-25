@@ -1,4 +1,4 @@
-import React,{  memo, useCallback, useEffect, useMemo, useState } from "react";
+import React,{  useCallback, useEffect, useMemo, useState } from "react";
 import type { MenuProps } from 'antd';
 import { navBarProps } from "@/interface/index"
 import { Menu } from 'antd';
@@ -7,7 +7,7 @@ import { useNavigate,useLocation } from "react-router-dom";
 import CustomIcon from "../Icon";
 
 
-export default memo(() => {
+export default React.memo(() => {
   const { navBarList } = useAppSelector((state) => state.routerStore)
   const location = useLocation();
   const [currentMode,setCurrentMode] = useState<string>('')

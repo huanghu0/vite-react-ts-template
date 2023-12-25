@@ -13,6 +13,8 @@
     "@ant-design/icons": "^5.2.6",
     "@reduxjs/toolkit": "^1.9.7",
     "antd": "^5.11.1",
+    "antd-mobile": "^5.33.2",
+    "antd-mobile-icons": "^0.3.0",
     "axios": "^1.6.2",
     "lodash": "^4.17.21",
     "nprogress": "^0.2.0",

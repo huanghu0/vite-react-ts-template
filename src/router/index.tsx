@@ -9,15 +9,19 @@ const routes:RouteObject[] = [
   {
     path:'/404',
     element:lazyLoad('error/404')
-  }, 
-  {
-    path:'/phone/home',
-    element:lazyLoad('phone/home/index')
   },
   {
-    path:'/phone/page',
-    element:lazyLoad('phone/page/index')
-  }
+    path:'/phone',
+    element:lazyLoad('phone/index'),
+    children:[{
+      path:'/phone/home',
+      element:lazyLoad('phone/home/index')
+    },{
+      path:'/phone/page',
+      element:lazyLoad('phone/page/index')      
+    }
+  ]
+  }, 
 ]
 
 

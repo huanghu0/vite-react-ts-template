@@ -1,10 +1,9 @@
-import React,{  memo } from "react";
+import React from "react";
 import SideBar from "./sidebar";
 import NavBar from "./navbar";
 import AppMain from './appMain'
-import "@/assets/scss/layout.scss"
 
-export default memo(() => {
+export default React.memo(() => {
   return (
     <div className="app-layout">
       <SideBar></SideBar>
