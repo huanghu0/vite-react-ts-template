@@ -136,6 +136,43 @@
             }
           }
         ]
+      },
+      {
+        "name": "Phone",
+        "path": "/phone",
+        "hidden": false,
+        "redirect": "noRedirect",
+        "component": "phone/index",
+        "alwaysShow": true,  
+        "meta": {
+          "title": "H5端",
+          "icon": "Phone",
+          "noCache": false,
+          "link": null
+        },              
+        "children":[{
+          "name": "Home",
+          "path": "home",
+          "hidden": false,
+          "component": "phone/home/index",
+          "meta": {
+            "title": "首页",
+            "icon": "Home",
+            "noCache": false,
+            "link": null
+          }          
+        },{  
+          "name": "Page",
+          "path": "page",
+          "hidden": false,
+          "component": "phone/page/index",
+          "meta": {
+            "title": "我的",
+            "icon": "Page",
+            "noCache": false,
+            "link": null
+          }               
+        }]
       }
     ]
   }
